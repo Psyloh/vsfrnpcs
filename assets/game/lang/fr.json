@@ -1,0 +1,19 @@
+{
+    "tradingwindow-vsfrnpc-male-axel": "{0} - Guide des nouveaux",
+    "tradingwindow-vsfrnpc-female-marie": "{0} - Boulangère",
+    "tradingwindow-vsfrnpc-male-john": "{0} - Ancien mercenaire",
+    //reste à changer puis traduire
+    "tradingwindow-vsfrnpc-male-michel": "{0} - Le seul et unique",
+
+    "nametag-vsfrnpc-male-unrevealed": "Villageois",
+    "nametag-vsfrnpc-female-unrevealed": "Villageoise",
+
+    "quest-select-title": "Quêtes",
+    "tab-available-quests": "Quêtes disponibles",
+    "tab-active-quests": "Quêtes en cours ",
+    "button-cancel": "Annuler",
+    "button-accept": "Accepter",
+    "button-complete": "Complete",
+    "no-quest-available-desc": "Aucune quête disponible",
+    "no-quest-active-desc": "Pas de quête en cours",
+}

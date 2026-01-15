@@ -1,0 +1,12 @@
+{
+    "vsfrnpcs:item-creature-vsfrnpc-male-axel" : "Axel",
+    "vsfrnpcs:item-creature-vsfrnpc-female-marie" : "Marie",
+    "vsfrnpcs:item-creature-vsfrnpc-male-john" : "John",
+    "vsfrnpcs:item-creature-vsfrnpc-male-michel" : "Michel",
+
+    "tabname-vsfrnpcs": "VSFR NPCs",
+
+    "tradingwindow-vsfrnpc-male-axel": "{0} - Begginers Guide",
+    "tradingwindow-vsfrnpc-female-marie": "{0} - Baker",
+    "tradingwindow-vsfrnpc-male-john": "{0} - Old Mercenary"
+}
