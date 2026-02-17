@@ -1,0 +1,160 @@
+{
+    components: [
+        {
+			code: "testhasmet",
+			owner: "thomas",
+			type: "condition",
+			variable: "entity.hasmet",
+			isNotValue: "true",
+			thenJumpTo: "firstmeet",
+			elseJumpTo: "mainhello"
+		},
+		{
+			code: "firstmeet",
+			owner: "thomas",
+			type: "talk",
+			text: [
+				{ value: "vsfrnpcs:dialogue-orario-thomas-firstmeet" },
+			],
+			jumpTo: "firstmeetresponse"
+		},
+		{
+			code: "firstmeetresponse",
+			owner: "player",
+			type: "talk",
+			text: [
+				{ value: "vsfrnpcs:dialogue-orario-thomas-fmresponse", jumpTo: "firstmeet2" }
+			],
+		},
+		{
+			code: "firstmeet2",
+			owner: "thomas",
+			type: "talk",
+			text: [
+				{ value: "vsfrnpcs:dialogue-orario-thomas-firstmeet2" },
+			],
+			jumpTo: "firstmeetresponse2"
+		},
+		{
+			code: "firstmeetresponse2",
+			owner: "player",
+			type: "talk",
+			text: [
+				{ value: "vsfrnpcs:dialogue-orario-thomas-fmresponse2", jumpTo: "firstmeet3" }
+			],
+		},
+		{
+			code: "firstmeet3",
+			owner: "thomas",
+			type: "talk",
+			text: [
+				{ value: "vsfrnpcs:dialogue-orario-thomas-firstmeet3" },
+			],
+			jumpTo: "firstmeetresponse3"
+		},
+		{
+			code: "firstmeetresponse3",
+			owner: "player",
+			type: "talk",
+			text: [
+				{ value: "vsfrnpcs:dialogue-orario-thomas-fmresponse3", jumpTo: "firstmeet4" }
+			],
+		},
+		{
+			code: "firstmeet4",
+			owner: "thomas",
+			type: "talk",
+			text: [
+				{ value: "vsfrnpcs:dialogue-orario-thomas-firstmeet4" },
+			],
+			jumpTo: "firstmeetresponse4"
+		},
+		{
+			code: "firstmeetresponse4",
+			owner: "player",
+			type: "talk",
+			text: [
+				{ value: "vsfrnpcs:dialogue-orario-thomas-fmresponse4", jumpTo: "firstmeet5" }
+			],
+		},
+		{
+			code: "firstmeet5",
+			owner: "thomas",
+            setVariables: {"entity.hasmet": "true"},
+			trigger: "revealname",			
+			type: "talk",
+			text: [
+				{ value: "vsfrnpcs:dialogue-orario-thomas-firstmeet5" },
+			],
+			jumpTo: "firstmeetresponse5"
+		},
+		{
+			code: "firstmeetresponse5",
+			owner: "player",
+			type: "talk",
+			text: [
+				{ value: "vsfrnpcs:dialogue-orario-thomas-fmresponse5", jumpTo: "close" }
+			],
+		},
+		{
+			code: "mainhello",
+			owner: "thomas",
+			type: "talk",
+			text: [
+				{ value: "vsfrnpcs:dialogue-orario-thomas-mainhello" },
+			],
+			jumpTo: "mainplayer"
+		},
+		{
+			code: "mainplayer",
+			owner: "player",
+			type: "talk",
+			text: [
+				{ value: "vsfrnpcs:dialogue-orario-thomas-howtotransloc", jumpTo: "translocresponse" },
+				{ value: "vsfrnpcs:dialogue-orario-thomas-howtormvtransloc", jumpTo: "translocrmvresponse" },
+				{ value: "vsfrnpcs:dialogue-orario-thomas-howtodpltransloc", jumpTo: "translocdplresponse"},
+				{ value: "vsfrnpcs:dialogue-orario-thomas-mainbye", jumpTo: "close"}
+			],
+		},
+		{
+			code: "translocresponse",
+			owner: "thomas",
+			type: "talk",
+			text: [
+				{ value: "vsfrnpcs:dialogue-orario-thomas-translocresponse" },
+			],
+			jumpTo: "mainthanks"
+		},
+		{
+			code: "translocrmvresponse",
+			owner: "thomas",
+			type: "talk",
+			text: [
+				{ value: "vsfrnpcs:dialogue-orario-thomas-translocrmvresponse" },
+			],
+			jumpTo: "mainthanks"
+		},
+		{
+			code: "translocdplresponse",
+			owner: "thomas",
+			type: "talk",
+			text: [
+				{ value: "vsfrnpcs:dialogue-orario-thomas-translocdplresponse" },
+			],
+			jumpTo: "mainthanks"
+		},
+		{
+			code: "mainthanks",
+			owner: "player",
+			type: "talk",
+			text: [
+				{ value: "vsfrnpcs:dialogue-orario-thomas-mainthanks", jumpTo: "mainhello" },
+			],
+		},
+        {
+			code: "close",
+			owner: "thomas",
+			trigger: "closedialogue",
+		}
+    ]
+}
