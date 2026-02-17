@@ -718,15 +718,6 @@
 						whenInEmotionState: "fleeondamage"
 					},
 					{
-						code: "fleeentity",
-						entityCodes: ["drifter-*", "shiver-*", "bowtorn-*"],
-						priority: 1.49,
-						movespeed: 0.035,
-						seekingRange: 6,
-						animation: "Run",
-						animationSpeed: 1.75
-					},
-					{
 						code: "idle",
 						priority: 1.2,
 						minduration: 2500,
@@ -744,16 +735,16 @@
 						maxcooldown: 30000,
 						animation: "idle2"
 					},
-					{
-						code: "wander",
-						priority: 1.0,
-						movespeed: 0.01,
-						animation: "Walk",
-						wanderChance: 0.005,
-						maxDistanceToSpawn: 15,
-						wanderRangeMin: 1,
-						wanderRangeMax: 3
-					},
+                    {
+                        code: "wander",
+                        priority: 1.0,
+                        movespeed: 0.01,
+                        animation: "Walk",
+                        wanderChance: 0.005,
+                        maxDistanceToSpawn: 4,
+                        wanderRangeMin: 1,
+                        wanderRangeMax: 3
+                    },
 					{
 						code: "lookaround",
 						priority: 0.5

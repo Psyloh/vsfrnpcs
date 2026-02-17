@@ -32,7 +32,7 @@
 			owner: "player",
 			type: "talk",
 			text: [
-				{ value: "vsfrnpcs:dialogue-orario-michel-hasnotmet", jumpTo: "close" }
+				{ value: "vsfrnpcs:dialogue-player-nowords", jumpTo: "close" }
 			],
 		},
 		{
